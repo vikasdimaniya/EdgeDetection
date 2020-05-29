@@ -38,19 +38,6 @@ boolean diff(color c1, color c2) {
   }
   return true;
 }
-int countPix(int pix) {
-  int count=0;
-  if (img.pixels[pix]==color(0))count++;
-  if (img.pixels[pix-1]==color(0))count++;
-  if (img.pixels[pix+1]==color(0))count++;
-  if (img.pixels[pix-1-width]==color(0))count++;
-  if (img.pixels[pix+1-width]==color(0))count++;
-  if (img.pixels[pix-1+width]==color(0))count++;
-  if (img.pixels[pix+1+width]==color(0))count++;
-  if (img.pixels[pix-width]==color(0))count++;
-  if (img.pixels[pix+width]==color(0))count++;
-  return count;
-}
 void draw() {
   if (myMovie.available() == true) {
     myMovie.read();
