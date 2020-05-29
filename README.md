@@ -3,6 +3,7 @@ Edge detection in video files, images, cam.
 https://processing.org/
 download IDE from the website, and open the file in ide, just click on run button.
 Change the value of variable "d" to change the senstivity to color difference.
+Make sure to enter the correct resolution value in the code for the file.
 
 This project is based on color distance, very similar to document distancing yet very different.
  Here insted of finding difference between two documents we have two colors and insted of words we have RGB values.
